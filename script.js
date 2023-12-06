@@ -30,6 +30,14 @@ function init(e) {
 }
 
 function newGame() {
+	step = false;
+    	count = 0;
+	res.innerText = ' ';
+    	fields.forEach(item => {
+        	item.innerHTML = ' ';
+        	item.classList.remove('x', 'o', 'active');
+    	});
+    	game.addEventListener('click', init);
 
 }
 //выигрышные комбинации
